@@ -88,10 +88,18 @@ public class EmojiVacation {
         //
         // Hint: You can't use List.of() to do this, because you don't know the size of the
         // resulting list before the code actually runs. What can you use?
-        //
-        return List.of(
-            createRandomEmoji(adultSize),
-            createRandomEmoji(childSize));
+
+        List<GraphicsGroup> familyList = new ArrayList<>();
+
+        for (int i = 0; i < adultCount; i++){
+            familyList.add(createRandomEmoji(adultSize));
+        }
+
+        for (int i = 0; i < childCount; i++){
+            familyList.add(createRandomEmoji(childSize));
+        }
+
+        return familyList;
     }
 
     private static GraphicsGroup createRandomEmoji(double size) {
