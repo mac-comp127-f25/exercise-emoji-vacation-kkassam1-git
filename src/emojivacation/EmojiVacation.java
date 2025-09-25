@@ -69,6 +69,12 @@ public class EmojiVacation {
         List<GraphicsGroup> family = createFamily(2, 3);
         positionFamily(family, 60, 550, 20);
         // TODO: [Instructions step 4] Add each emoji in the list to the canvas
+
+
+        for (GraphicsGroup emoji : family) {
+            canvas.add(emoji);
+        }
+        
     }
 
     // –––––– Emoji family –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
