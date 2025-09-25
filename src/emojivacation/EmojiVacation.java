@@ -114,6 +114,16 @@ public class EmojiVacation {
         // TODO: [Instructions step 5] Iterate over the emojis in the list,
         //       and position them all in a neat row
 
+
+        double leftX1 = leftX;
+        for (GraphicsGroup emoji: family) {
+            double widthEmoji = emoji.getWidth();
+            double heightEmoji = emoji.getHeight();
+            double topEmoji = baselineY - heightEmoji;
+            emoji.setPosition(leftX1, topEmoji);
+            leftX1 += widthEmoji + spacing;
+        }
+
         // The leftmost emoji’s left edge should be at leftX, and spacing is the number of pixels that should be between
         // each emoji and the next. But how to you space them if the kids and adults have different widths? (Hint: you
         // can ask any graphics object for its width.)
