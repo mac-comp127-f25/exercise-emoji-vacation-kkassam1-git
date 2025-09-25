@@ -109,8 +109,20 @@ public class EmojiVacation {
         // Hint: You can use chained if/else conditionals: with a certain probability, return emoji
         // type A, else with some other probability return emoji type B, else with a certain
         // probability ... etc ... else return a smiley by default.
-        //
-        return ProvidedEmojis.createSmileyFace(size);
+
+        int number = randomInt(1, 5);   // 1 through 5
+
+        if (number == 1) {
+            return ProvidedEmojis.createSmileyFace(size);
+        } else if (number == 2) {
+            return ProvidedEmojis.createFrownyFace(size);
+        } else if (number == 3) {
+            return ProvidedEmojis.createWinkingFace(size);
+        } else if (number == 4) {
+            return ProvidedEmojis.createContentedFace(size);
+        } else {
+            return ProvidedEmojis.createNauseousFace(size);
+        }
     }
 
     private static void positionFamily(
