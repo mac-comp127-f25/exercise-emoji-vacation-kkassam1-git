@@ -48,11 +48,14 @@ sentence or two in response to each question is plenty.
 
 **What did you miss? What did you wish you did better?**
 
+I don't think I missed anything. I do wish I could approach this with more intuition - but I reckon that just comes with practice and time.
 
 
 **What challenges did you face, and how did you overcome them?**
 
-
+I looked into resources online to help with the different loops and how to add to lists.
 
 **What is something that was interesting or exciting, or a lesson you learned
   from this experience that you want to remember?**
+
+The infinite loop was definitely interesting, it's cool to see how we can use "truths" computers follow to mimic certain behaviours.
