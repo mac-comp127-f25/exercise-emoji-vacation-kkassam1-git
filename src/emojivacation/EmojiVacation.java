@@ -47,11 +47,24 @@ public class EmojiVacation {
         //       You should randomly determine the size and number of layers
         //       (within reasonable constraints).
 
+        if (percentChance(50)) {
+            double size = randomDouble(80, 160);
+            int layer = randomInt(1, 4);
+            addMountains(canvas,400, size, layer);
+        }
+
         addGround(canvas, 400);
 
         // TODO: [Instructions step 2] Create forests 60% of the time. You should randomly
         //       determine the count for the number of trees. Pick reasonable values for
         //       other parameters.
+
+        if (percentChance(60)) {
+            int count = randomInt(20, 30);
+            double baseY = 500;
+            double spanY = 150;
+            addForest(canvas, baseY, spanY, count); 
+        }
 
         List<GraphicsGroup> family = createFamily(2, 3);
         positionFamily(family, 60, 550, 20);
